@@ -1,0 +1,30 @@
+[2026-09-07T15:02:48Z] === ENRICH ITERATION 1 START | repo=BurntSushi/memchr sha=886ca4ca ===
+[2026-09-07T15:02:48Z] [iter=1] PHASE START: enrich repo=BurntSushi/memchr sha=886ca4ca runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/886ca4ca-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/886ca4ca4820297191c6e9f7b023dc356f31a4d1.nq.gz
+[2026-09-07T15:02:49Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-07T15:03:10Z] [iter=1] AST store loaded triples=2431400 load_secs=20 mem_mb=960 MB
+[2026-09-07T15:03:10Z] [iter=1] Step 2: Finding LSP targets mem_mb=960 MB
+[2026-09-07T15:03:16Z] [iter=1] LSP targets found call_sites=17548 imports=0 extends=0 implements=665 secs=6
+[2026-09-07T15:03:21Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=960 MB
+[2026-09-07T15:03:35Z] [iter=1] Position index built positions=167163 nodes_with_types=191451 secs=14 mem_mb=960 MB
+[2026-09-07T15:03:35Z] [iter=1] Step 3: Starting LSP resolution mem_mb=960 MB already_completed_types=[] already_completed_files=0
+[2026-09-07T15:03:35Z] [iter=1] Resolving target type target_type=call_site count=17548
+[2026-09-07T15:03:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=src/arch/wasm32/simd128/packedpair.rs
+[2026-09-07T15:06:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=3 resolved=44 errors=136 current=benchmarks/engines/rust-memchr/main.rs
+[2026-09-07T15:06:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.0 files_done=5 resolved=73 errors=177 current=src/tests/substring/mod.rs
+[2026-09-07T15:07:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=6 resolved=158 errors=216 current=src/tests/mod.rs
+[2026-09-07T15:09:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=9 resolved=204 errors=348 current=src/arch/wasm32/simd128/memchr.rs
+[2026-09-07T15:13:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.9 files_done=12 resolved=301 errors=588 current=src/arch/all/shiftor.rs
+[2026-09-07T15:15:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=14 resolved=362 errors=672 current=benchmarks/shared/lib.rs
+[2026-09-07T15:15:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=19 resolved=415 errors=706 current=src/arch/x86_64/sse2/memchr.rs
+[2026-09-07T15:17:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.6 files_done=20 resolved=427 errors=807 current=src/vector.rs
+[2026-09-07T15:19:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.3 files_done=25 resolved=511 errors=909 current=src/memmem/mod.rs
+[2026-09-07T15:20:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=26 resolved=539 errors=970 current=src/arch/all/rabinkarp.rs
+[2026-09-07T15:20:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.9 files_done=27 resolved=571 errors=1007 current=benchmarks/engines/rust-std/main.rs
+[2026-09-07T15:22:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.4 files_done=29 resolved=638 errors=1097 current=src/arch/wasm32/memchr.rs
+[2026-09-07T15:22:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=40 resolved=691 errors=1143 current=src/arch/aarch64/memchr.rs
+[2026-09-07T15:23:12Z] [iter=1] Target type resolved target_type=call_site resolved=698 errors=1155 secs=1177 mem_mb=960 MB
+[2026-09-07T15:23:12Z] [iter=1] Resolving target type target_type=implements_clause count=665
+[2026-09-07T15:23:19Z] [iter=1] Target type resolved target_type=implements_clause resolved=15 errors=0 secs=8 mem_mb=960 MB
+[2026-09-07T15:23:28Z] [iter=1] Step 5: Writing final enrichment file triples=53391
+[2026-09-07T15:23:29Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/886ca4ca4820297191c6e9f7b023dc356f31a4d1.nq.gz size_kb=972
+[2026-09-07T15:23:29Z] [iter=1] PHASE END: enrich elapsed_s=1241 elapsed_min=20.7 total_triples=53391
